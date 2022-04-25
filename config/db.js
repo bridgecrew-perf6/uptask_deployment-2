@@ -4,13 +4,20 @@ const Sequelize = require('sequelize');
 require('dotenv').config({path: 'variables.env'});
 
 const db = new Sequelize(
-    process.env.BD_NOMBRE, 
-    process.env.BD_USER, 
-    process.env.BD_PASS, 
+    'test',
+    'VentaVinculacion',
+    '2524Ad&you_2021',
+
+
+    // process.env.BD_NOMBRE, 
+    // process.env.BD_USER, 
+    // process.env.BD_PASS, 
     {
-        host: process.env.BD_HOST,
+        //host: process.env.BD_HOST,
+        host: '51.89.33.89',
         dialect: 'mysql',
-        port: process.env.BD_PORT,
+        //port: process.env.BD_PORT,
+        port: '3306',
         define: {
             timestamps: false
         },
